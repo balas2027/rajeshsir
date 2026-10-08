@@ -1,0 +1,1409 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rajesh Kumar K | Professional Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f2f4f6",
+              surface: "#f7f9fb",
+              "on-background": "#191c1e",
+              "surface-tint": "#455f88",
+              "on-secondary-container": "#785a1a",
+              primary: "#002045",
+              "on-tertiary-fixed": "#161c22",
+              "on-secondary": "#ffffff",
+              "on-primary": "#ffffff",
+              error: "#ba1a1a",
+              outline: "#74777f",
+              background: "#f7f9fb",
+              "tertiary-container": "#30363c",
+              "on-secondary-fixed": "#261900",
+              "surface-dim": "#d8dadc",
+              "on-error": "#ffffff",
+              "secondary-container": "#fed488",
+              "on-tertiary-fixed-variant": "#41474e",
+              "on-tertiary-container": "#989fa6",
+              "outline-variant": "#c4c6cf",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              tertiary: "#1b2127",
+              "secondary-fixed-dim": "#e9c176",
+              "on-surface-variant": "#43474e",
+              "surface-container-highest": "#e0e3e5",
+              "primary-fixed-dim": "#adc7f7",
+              "inverse-surface": "#2d3133",
+              "primary-container": "#1a365d",
+              "surface-container-lowest": "#ffffff",
+              secondary: "#775a19",
+              "primary-fixed": "#d6e3ff",
+              "on-secondary-fixed-variant": "#5d4201",
+              "inverse-on-surface": "#eff1f3",
+              "on-primary-fixed": "#001b3c",
+              "inverse-primary": "#adc7f7",
+              "surface-container-high": "#e6e8ea",
+              "tertiary-fixed": "#dde3eb",
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#f7f9fb",
+              "on-surface": "#191c1e",
+              "surface-container": "#eceef0",
+              "on-primary-fixed-variant": "#2d476f",
+              "tertiary-fixed-dim": "#c1c7cf",
+              "on-primary-container": "#86a0cd",
+              "surface-variant": "#e0e3e5",
+              "secondary-fixed": "#ffdea5",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "container-max": "1200px",
+              "section-padding": "5rem",
+              "stack-md": "1rem",
+              "stack-sm": "0.5rem",
+              gutter: "1.5rem",
+              "stack-lg": "2rem",
+            },
+            fontFamily: {
+              "body-md": ["Hanken Grotesk"],
+              "label-sm": ["Hanken Grotesk"],
+              "headline-lg-mobile": ['"Source Serif 4"'],
+              "title-md": ["Hanken Grotesk"],
+              "headline-lg": ['"Source Serif 4"'],
+              "body-lg": ["Hanken Grotesk"],
+              "display-lg": ['"Source Serif 4"'],
+            },
+            fontSize: {
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "label-sm": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "36px", fontWeight: "600" },
+              ],
+              "title-md": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+              "headline-lg": [
+                "32px",
+                { lineHeight: "40px", fontWeight: "600" },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      body {
+        background-color: #f7f9fb;
+        color: #191c1e;
+      }
+      .academic-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .academic-card:hover {
+        border-color: #775a19; /* Secondary Gold accent */
+        box-shadow: 0 4px 20px rgba(26, 54, 93, 0.05);
+      }
+      .prestige-border {
+        border: 1px solid #e2e8f0;
+        position: relative;
+      }
+      .prestige-border::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        border: 1px solid #e2e8f0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body class="font-body-md text-body-md overflow-x-hidden">
+    <!-- TopAppBar -->
+    <header
+      class="bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline fixed top-0 left-0 right-0 z-50"
+    >
+      <div
+        class="relative flex justify-between items-center w-full px-6 py-4 max-w-container-max mx-auto"
+      >
+        <div class="flex items-center gap-3">
+          <span
+            class="material-symbols-outlined text-primary dark:text-primary-fixed"
+            >school</span
+          >
+          <span
+            class="font-headline-lg-mobile text-headline-lg-mobile font-semibold text-primary dark:text-primary-fixed"
+            >Rajesh Kumar K</span
+          >
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+          <a
+            class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary font-label-sm text-label-sm transition-opacity active:opacity-80"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200"
+            href="#research"
+            >Research</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200"
+            href="#awards"
+            >Awards</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200"
+            href="#education"
+            >Education</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200"
+            href="#courses"
+            >Courses</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+        <button
+          id="profileToggle"
+          type="button"
+          class="material-symbols-outlined text-primary dark:text-primary-fixed rounded-full p-2 hover:bg-surface-container-high transition-colors"
+          aria-expanded="false"
+          aria-controls="profileCard"
+        >
+          contact_mail
+        </button>
+        <div
+          id="profileCard"
+          class="hidden absolute right-6 top-16 w-[320px] rounded-2xl border border-outline-variant bg-surface shadow-xl p-5"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shrink-0"
+            >
+              <span class="material-symbols-outlined">person</span>
+            </div>
+            <div class="min-w-0">
+              <p
+                class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >
+                Profile
+              </p>
+              <h3 class="font-title-md text-title-md text-primary truncate">
+                Rajesh Kumar K
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Assistant Professor @ RMKCET
+              </p>
+            </div>
+          </div>
+          <div class="mt-5 grid grid-cols-3 gap-3">
+            <div class="rounded-xl bg-surface-container-low p-3 text-center">
+              <div class="font-title-md text-title-md text-primary">13+</div>
+              <div
+                class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest"
+              >
+                Years
+              </div>
+            </div>
+            <div class="rounded-xl bg-surface-container-low p-3 text-center">
+              <div class="font-title-md text-title-md text-primary">4</div>
+              <div
+                class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest"
+              >
+                Platforms
+              </div>
+            </div>
+            <div class="rounded-xl bg-surface-container-low p-3 text-center">
+              <div class="font-title-md text-title-md text-primary">1</div>
+              <div
+                class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest"
+              >
+                Profile
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 space-y-3">
+            <a
+              class="flex items-center gap-3 rounded-xl border border-outline-variant px-4 py-3 text-sm text-primary hover:bg-surface-container-low transition-colors"
+              href="#contact"
+            >
+              <span class="material-symbols-outlined text-secondary">call</span>
+              View contact section
+            </a>
+            <a
+              class="flex items-center gap-3 rounded-xl border border-outline-variant px-4 py-3 text-sm text-primary hover:bg-surface-container-low transition-colors"
+              href="#courses"
+            >
+              <span class="material-symbols-outlined text-secondary"
+                >school</span
+              >
+              Open courses section
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="pt-20 pb-24 md:pb-12">
+      <!-- Hero Section -->
+      <section class="px-6 py-12 md:py-24 max-w-container-max mx-auto">
+        <div class="flex flex-col md:flex-row md:items-center gap-12">
+          <div class="flex-1 space-y-6">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full"
+            >
+              <span class="material-symbols-outlined text-secondary text-sm"
+                >verified</span
+              >
+              <span
+                class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider"
+                >Academic Portfolio</span
+              >
+            </div>
+            <h1 class="font-display-lg text-display-lg text-primary">
+              Mr. Rajesh Kumar K
+            </h1>
+            <p class="font-title-md text-title-md text-secondary italic">
+              Assistant Professor @ RMKCET
+            </p>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed"
+            >
+              An accomplished academician with over
+              <span class="font-bold text-primary">13 years</span> of teaching
+              and research excellence. Currently pursuing Ph.D. research at
+              <span class="font-bold text-primary">Anna University</span>,
+              focusing on cutting-edge innovations in the digital landscape.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-4">
+              <button
+                class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-all flex items-center gap-2"
+              >
+                Download CV
+                <span class="material-symbols-outlined text-sm">download</span>
+              </button>
+              <button
+                class="border border-primary text-primary px-8 py-3 rounded-lg font-label-sm text-label-sm hover:bg-surface-container-low transition-all"
+              >
+                View Publications
+              </button>
+            </div>
+          </div>
+          <div class="hidden md:block w-1/3 relative">
+            <div
+              class="aspect-square bg-surface-container-highest rounded-xl overflow-hidden prestige-border"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"
+              ></div>
+              <img
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                src="profile.jpeg"
+                alt="Rajesh Kumar K portrait"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Achievements Highlights (Best Innovator) -->
+      <section class="bg-surface-container-low py-20 px-6" id="awards">
+        <div class="max-w-container-max mx-auto text-center space-y-12">
+          <div class="space-y-4">
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >Distinctions</span
+            >
+            <h2 class="font-headline-lg text-headline-lg text-primary">
+              Key Achievement
+            </h2>
+          </div>
+          <div
+            class="bg-surface-container-lowest p-8 md:p-12 prestige-border max-w-5xl mx-auto shadow-sm"
+          >
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+              <div
+                class="w-full lg:w-1/2 overflow-hidden rounded-2xl border border-outline-variant bg-white p-2 shadow-sm"
+              >
+                <img
+                  class="w-full h-auto max-h-[340px] object-contain"
+                  src="innovator_award.jpeg"
+                  alt="Innovator award certificate"
+                />
+              </div>
+              <div class="w-full lg:w-1/2 flex items-center justify-center">
+                <div class="max-w-lg text-left space-y-5">
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="w-14 h-14 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center shadow-sm shrink-0"
+                    >
+                      <span class="material-symbols-outlined text-3xl"
+                        >military_tech</span
+                      >
+                    </div>
+                    <div>
+                      <h3
+                        class="font-display-lg text-3xl md:text-4xl text-primary font-bold"
+                      >
+                        Best Innovator Award
+                      </h3>
+                      <p
+                        class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1"
+                      >
+                        Awarded for excellence in innovation
+                      </p>
+                    </div>
+                  </div>
+                  <p
+                    class="font-body-lg text-body-lg text-on-surface-variant italic"
+                  >
+                    Recognized for pioneering contributions to academic
+                    excellence and institutional growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education -->
+      <section class="py-24 px-6 bg-surface" id="education">
+        <div class="max-w-container-max mx-auto">
+          <div
+            class="flex flex-col lg:flex-row gap-12 lg:items-end lg:justify-between mb-12"
+          >
+            <div class="space-y-4 max-w-2xl">
+              <span
+                class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                >Education</span
+              >
+              <h2 class="font-headline-lg text-headline-lg text-primary">
+                Academic background
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                A concise record of formal education, from diploma study through
+                engineering degrees and postgraduate specialization.
+              </p>
+            </div>
+            <div
+              class="inline-flex items-center gap-2 rounded-lg border border-outline-variant bg-surface-container-low px-4 py-3 text-sm text-on-surface-variant"
+            >
+              <span class="material-symbols-outlined text-secondary"
+                >menu_book</span
+              >
+              Three milestones in the academic journey
+            </div>
+          </div>
+          <div class="relative pl-0 lg:pl-12">
+            <div
+              class="absolute left-6 top-0 bottom-0 w-px bg-outline-variant hidden lg:block"
+            ></div>
+            <div class="space-y-6">
+              <div class="relative pl-0 lg:pl-12">
+                <div
+                  class="hidden lg:flex absolute left-[18px] top-8 w-5 h-5 rounded-full bg-primary border-4 border-surface"
+                ></div>
+                <div
+                  class="academic-card bg-surface-container-lowest border border-outline-variant p-6 rounded-2xl"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5"
+                  >
+                    <div class="flex items-center gap-4">
+                      <div
+                        class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-sm"
+                      >
+                        <span class="material-symbols-outlined text-3xl"
+                          >school</span
+                        >
+                      </div>
+                      <div>
+                        <h3 class="font-title-md text-title-md text-primary">
+                          Sathyabama Institute of Science & Technology, Chennai
+                        </h3>
+                        <p
+                          class="font-body-md text-body-md text-on-surface-variant"
+                        >
+                          Master of Engineering, Computer Science and
+                          Engineering
+                        </p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold sm:pt-2"
+                      >2017 - 2018</span
+                    >
+                  </div>
+                  <div class="space-y-3 lg:pl-[4.5rem]">
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      <span class="font-semibold text-primary">Grade:</span>
+                      First class distinction
+                    </p>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      <span class="font-semibold text-primary"
+                        >Activities:</span
+                      >
+                      Socialist professor
+                    </p>
+                    <p
+                      class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                    >
+                      Skills
+                    </p>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      Python, Python (Programming Language), and additional
+                      related skills
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative pl-0 lg:pl-12">
+                <div
+                  class="hidden lg:flex absolute left-[18px] top-8 w-5 h-5 rounded-full bg-secondary border-4 border-surface"
+                ></div>
+                <div
+                  class="academic-card bg-surface-container-lowest border border-outline-variant p-6 rounded-2xl"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5"
+                  >
+                    <div class="flex items-center gap-4">
+                      <div
+                        class="w-14 h-14 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center shadow-sm"
+                      >
+                        <span class="material-symbols-outlined text-3xl"
+                          >account_balance</span
+                        >
+                      </div>
+                      <div>
+                        <h3 class="font-title-md text-title-md text-primary">
+                          JAYA ENGINEERING COLLEGE, Anna University Chennai
+                        </h3>
+                        <p
+                          class="font-body-md text-body-md text-on-surface-variant"
+                        >
+                          Bachelor's degree, Computer Science and Engineering
+                        </p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold sm:pt-2"
+                      >2008 - 2012</span
+                    >
+                  </div>
+                  <div class="space-y-3 lg:pl-[4.5rem]">
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      <span class="font-semibold text-primary">Grade:</span>
+                      First class
+                    </p>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      <span class="font-semibold text-primary"
+                        >Activities:</span
+                      >
+                      FOSS Club member
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative pl-0 lg:pl-12">
+                <div
+                  class="hidden lg:flex absolute left-[18px] top-8 w-5 h-5 rounded-full bg-accent border-4 border-surface"
+                ></div>
+                <div
+                  class="academic-card bg-surface-container-lowest border border-outline-variant p-6 rounded-2xl"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5"
+                  >
+                    <div class="flex items-center gap-4">
+                      <div
+                        class="w-14 h-14 rounded-2xl bg-accent text-on-primary flex items-center justify-center shadow-sm"
+                      >
+                        <span
+                          class="material-symbols-outlined text-3xl text-secondary-fixed"
+                          >workspace_premium</span
+                        >
+                      </div>
+                      <div>
+                        <h3 class="font-title-md text-title-md text-primary">
+                          Sri Durgadevi Polytechnic College, India
+                        </h3>
+                        <p
+                          class="font-body-md text-body-md text-on-surface-variant"
+                        >
+                          Diploma of Education, Computer Science Engineering
+                        </p>
+                      </div>
+                    </div>
+                    <span
+                      class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold sm:pt-2"
+                      >2007 - 2008</span
+                    >
+                  </div>
+                  <div class="space-y-3 lg:pl-[4.5rem]">
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      <span class="font-semibold text-primary">Grade:</span>
+                      First class honours
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Research Areas -->
+      <section class="py-24 px-6 max-w-container-max mx-auto" id="research">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+        >
+          <div class="space-y-4">
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+              >Expertise</span
+            >
+            <h2 class="font-headline-lg text-headline-lg text-primary">
+              Research Domains
+            </h2>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+            Exploring the intersection of security, intelligence, and
+            distributed systems.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <!-- AI -->
+          <div
+            class="academic-card bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center gap-4"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl"
+              >psychology</span
+            >
+            <h4 class="font-title-md text-title-md">Artificial Intelligence</h4>
+          </div>
+          <!-- ML -->
+          <div
+            class="academic-card bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center gap-4"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl"
+              >neurology</span
+            >
+            <h4 class="font-title-md text-title-md">Machine Learning</h4>
+          </div>
+          <!-- Blockchain -->
+          <div
+            class="academic-card bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center gap-4"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl"
+              >account_balance_wallet</span
+            >
+            <h4 class="font-title-md text-title-md">Blockchain</h4>
+          </div>
+          <!-- Network Security -->
+          <div
+            class="academic-card bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center gap-4"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl"
+              >encrypted</span
+            >
+            <h4 class="font-title-md text-title-md">Network Security</h4>
+          </div>
+          <!-- Image Processing -->
+          <div
+            class="academic-card bg-surface-container-lowest p-8 border border-outline-variant flex flex-col items-center text-center gap-4"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl"
+              >filter_vintage</span
+            >
+            <h4 class="font-title-md text-title-md">
+              Digital Image Processing
+            </h4>
+          </div>
+        </div>
+      </section>
+      <!-- Courses -->
+      <section class="py-24 px-6 bg-surface" id="courses">
+        <div class="max-w-container-max mx-auto">
+          <div
+            class="flex flex-col lg:flex-row gap-12 lg:items-end lg:justify-between mb-12"
+          >
+            <div class="space-y-4 max-w-2xl">
+              <span
+                class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                >Courses</span
+              >
+              <h2 class="font-headline-lg text-headline-lg text-primary">
+                Platform-based course archives
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Browse course certificates organized by platform. Each card
+                opens a dedicated detail page for Coursera, Infosys, NITTTR, or
+                Udemy.
+              </p>
+            </div>
+            <a
+              class="inline-flex items-center gap-2 self-start rounded-lg border border-primary px-5 py-3 font-label-sm text-label-sm text-primary hover:bg-primary hover:text-on-primary transition-all"
+              href="udemy_courses.html"
+            >
+              View detail pages
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            <a
+              class="academic-card bg-surface-container-lowest border border-outline-variant overflow-hidden group"
+              href="coursera_courses.html"
+            >
+              <div class="p-8 space-y-6">
+                <div class="flex items-center justify-between gap-4">
+                  <div
+                    class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-sm"
+                  >
+                    <span class="material-symbols-outlined text-3xl"
+                      >school</span
+                    >
+                  </div>
+                  <span
+                    class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold"
+                    >03 files</span
+                  >
+                </div>
+                <div class="space-y-2">
+                  <h3 class="font-title-md text-title-md text-primary">
+                    Coursera
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    A clean archive hub for Coursera certificates and documents.
+                  </p>
+                </div>
+                <div class="h-px bg-outline-variant"></div>
+                <div
+                  class="flex items-center justify-between text-sm text-on-surface-variant"
+                >
+                  <span>Open detail page</span>
+                  <span class="material-symbols-outlined text-base"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+            </a>
+            <a
+              class="academic-card bg-surface-container-lowest border border-outline-variant overflow-hidden group"
+              href="infosys_courses.html"
+            >
+              <div class="p-8 space-y-6">
+                <div class="flex items-center justify-between gap-4">
+                  <div
+                    class="w-14 h-14 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center shadow-sm"
+                  >
+                    <span class="material-symbols-outlined text-3xl"
+                      >description</span
+                    >
+                  </div>
+                  <span
+                    class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold"
+                    >02 files</span
+                  >
+                </div>
+                <div class="space-y-2">
+                  <h3 class="font-title-md text-title-md text-primary">
+                    Infosys
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Training records and PDF certificates from Infosys.
+                  </p>
+                </div>
+                <div class="h-px bg-outline-variant"></div>
+                <div
+                  class="flex items-center justify-between text-sm text-on-surface-variant"
+                >
+                  <span>Open detail page</span>
+                  <span class="material-symbols-outlined text-base"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+            </a>
+            <a
+              class="academic-card bg-surface-container-lowest border border-outline-variant overflow-hidden group"
+              href="nitttr_courses.html"
+            >
+              <div class="p-8 space-y-6">
+                <div class="flex items-center justify-between gap-4">
+                  <div
+                    class="w-14 h-14 rounded-2xl bg-accent text-on-primary flex items-center justify-center shadow-sm"
+                  >
+                    <span class="material-symbols-outlined text-3xl"
+                      >rocket_launch</span
+                    >
+                  </div>
+                  <span
+                    class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold"
+                    >5 files</span
+                  >
+                </div>
+                <div class="space-y-2">
+                  <h3 class="font-title-md text-title-md text-primary">
+                    NITTTR
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Short course records and training PDFs from NITTTR.
+                  </p>
+                </div>
+                <div class="h-px bg-outline-variant"></div>
+                <div
+                  class="flex items-center justify-between text-sm text-on-surface-variant"
+                >
+                  <span>Open detail page</span>
+                  <span class="material-symbols-outlined text-base"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+            </a>
+            <a
+              class="academic-card bg-surface-container-lowest border border-outline-variant overflow-hidden group"
+              href="udemy_courses.html"
+            >
+              <div class="p-8 space-y-6">
+                <div class="flex items-center justify-between gap-4">
+                  <div
+                    class="w-14 h-14 rounded-2xl bg-secondary-fixed text-primary flex items-center justify-center shadow-sm"
+                  >
+                    <span class="material-symbols-outlined text-3xl"
+                      >workspace_premium</span
+                    >
+                  </div>
+                  <span
+                    class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold"
+                    >22 files</span
+                  >
+                </div>
+                <div class="space-y-2">
+                  <h3 class="font-title-md text-title-md text-primary">
+                    Udemy
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    The full Udemy archive with course certificates and PDFs.
+                  </p>
+                </div>
+                <div class="h-px bg-outline-variant"></div>
+                <div
+                  class="flex items-center justify-between text-sm text-on-surface-variant"
+                >
+                  <span>Open detail page</span>
+                  <span class="material-symbols-outlined text-base"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Certifications -->
+      <section class="py-24 px-6 bg-surface">
+        <div class="max-w-container-max mx-auto">
+          <div class="flex flex-col md:flex-row gap-16">
+            <div class="w-full md:w-1/2 space-y-8">
+              <div class="space-y-4">
+                <span
+                  class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                  >Credentials</span
+                >
+                <h2 class="font-headline-lg text-headline-lg text-primary">
+                  Professional Certifications
+                </h2>
+              </div>
+              <div class="space-y-6">
+                <div
+                  class="flex gap-4 p-6 bg-secondary-container/20 rounded-xl border-l-4 border-secondary"
+                >
+                  <span class="material-symbols-outlined text-secondary"
+                    >verified_user</span
+                  >
+                  <div>
+                    <h4 class="font-title-md text-title-md text-primary">
+                      Wipro Certified Faculty
+                    </h4>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      Authorized trainer for corporate readiness and technical
+                      skill development.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex gap-4 p-6 bg-surface-container-high rounded-xl border-l-4 border-primary"
+                >
+                  <span class="material-symbols-outlined text-primary"
+                    >hub</span
+                  >
+                  <div>
+                    <h4 class="font-title-md text-title-md text-primary">
+                      Innovation Ambassador
+                    </h4>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant"
+                    >
+                      Designated by MoE's Innovation Cell to foster
+                      entrepreneurship and creativity in academia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 grid grid-cols-1 gap-6">
+              <div
+                class="aspect-[1.41] overflow-hidden prestige-border bg-white p-2"
+              >
+                <img
+                  class="w-full h-full object-contain"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqz_dFNUyxqSp2QNA2gBr6F0xDyvD9e4-01OlCbjyz3CZuJoOyeVIg4bI2N9XHyNtmXVOOB-Le2JnMphLVGQ8AFs132PhRIcAtAqSfMmJ2UpdTTdzGc5q7-Ib7OS36MtqxMhvUx2Nb_conrjb7nNsrXoDd9a4fbd2SlnO6MegSjpbA-sfFfIm9xkU8WKdWa0gKQ7DUmyMjjpyD5HWr73pegDyPu2YHkCggpshKp3lXTzFL9R77OLObI-lgU1Td79p2i9Wz3q655QA"
+                />
+              </div>
+              <div
+                class="aspect-[1.27] overflow-hidden prestige-border bg-white p-2"
+              >
+                <img
+                  class="w-full h-full object-contain"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK1Okd0nC2Xs8JRJIH9Y8VTAdm7ULgcc6LiTGfWEo-SqSF7f38RPmmgx_Bfp5ZA0i3lNp2EeHBoNSpXXkDml3ST5yiQYff2fhNZIAz3hB3P9XIO4gxCKdzhKWGVUuI0EcsdRiBMPUj_UDdWMSULtfOd7IbGuvk0RHmUZxsFEIuq2GZf6ibdwXdYBkl5vCNKdL4R3maMwcXPL32MDVp-O_tw0INbfqcLJtI0jWjsjIcVVrPJ95wg-YCioGB9PR4U0aYCHCWInf-P7s"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Licenses & Certifications -->
+      <section class="py-24 px-6 bg-surface-container-low">
+        <div class="max-w-container-max mx-auto">
+          <div
+            class="flex flex-col lg:flex-row gap-12 lg:items-end lg:justify-between mb-12"
+          >
+            <div class="space-y-4 max-w-2xl">
+              <span
+                class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                >Licenses & Certifications</span
+              >
+              <h2 class="font-headline-lg text-headline-lg text-primary">
+                Professional credentials
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Selected certifications and memberships from LinkedIn, including
+                innovation leadership, IEEE membership, and Wipro training
+                credentials.
+              </p>
+            </div>
+            <div
+              class="inline-flex items-center gap-2 rounded-lg border border-outline-variant bg-surface px-4 py-3 text-sm text-on-surface-variant"
+            >
+              <span class="material-symbols-outlined text-secondary"
+                >workspace_premium</span
+              >
+              Verified LinkedIn credentials
+            </div>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <article
+              class="academic-card bg-surface-container-lowest border border-outline-variant rounded-2xl p-6 shadow-sm"
+            >
+              <div class="flex items-start justify-between gap-4 mb-5">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center shadow-sm shrink-0"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >volunteer_activism</span
+                  >
+                </div>
+                <span
+                  class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold"
+                  >Issued Jul 2024</span
+                >
+              </div>
+              <div class="space-y-3">
+                <h3 class="font-title-md text-title-md text-primary">
+                  Innovation Ambassador Certificate
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  MoE's Innovation Cell
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Advanced level innovation ambassador recognition.
+                </p>
+                <a
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors"
+                  href="https://www.linkedin.com/in/rajesh-kumar-k-84a72031a/overlay/Certifications/1146720198/treasury/?profileId=ACoAAFDomroBFdKhq5HXSxqhDDUqIhPDhb_5aiE"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View credential
+                  <span class="material-symbols-outlined text-base"
+                    >open_in_new</span
+                  >
+                </a>
+              </div>
+            </article>
+            <article
+              class="academic-card bg-surface-container-lowest border border-outline-variant rounded-2xl p-6 shadow-sm"
+            >
+              <div class="flex items-start justify-between gap-4 mb-5">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center shadow-sm shrink-0"
+                >
+                  <span class="material-symbols-outlined text-3xl">groups</span>
+                </div>
+                <span
+                  class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold"
+                  >Issued Mar 2026</span
+                >
+              </div>
+              <div class="space-y-3">
+                <h3 class="font-title-md text-title-md text-primary">
+                  IEEE Membership Certificate
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  IEEE
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Expires Dec 2026 · Credential ID 102117468
+                </p>
+                <a
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors"
+                  href="https://www.linkedin.com/company/7034/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View organization
+                  <span class="material-symbols-outlined text-base"
+                    >open_in_new</span
+                  >
+                </a>
+              </div>
+            </article>
+            <article
+              class="academic-card bg-surface-container-lowest border border-outline-variant rounded-2xl p-6 shadow-sm"
+            >
+              <div class="flex items-start justify-between gap-4 mb-5">
+                <div
+                  class="w-14 h-14 rounded-2xl bg-accent text-on-primary flex items-center justify-center shadow-sm shrink-0"
+                >
+                  <span class="material-symbols-outlined text-3xl">code</span>
+                </div>
+                <span
+                  class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold"
+                  >Issued May 2025</span
+                >
+              </div>
+              <div class="space-y-3">
+                <h3 class="font-title-md text-title-md text-primary">
+                  Wipro Certificate
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Java Full Stack Developer and Dot Net Developer
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Expires Jun 2026 · Skill: Java
+                </p>
+                <a
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors"
+                  href="https://www.linkedin.com/in/rajesh-kumar-k-84a72031a/overlay/Certifications/1289057872/treasury/?profileId=ACoAAFDomroBFdKhq5HXSxqhDDUqIhPDhb_5aiE"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View credential
+                  <span class="material-symbols-outlined text-base"
+                    >open_in_new</span
+                  >
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="py-24 px-6 bg-surface-container-low" id="contact">
+        <div class="max-w-container-max mx-auto">
+          <div
+            class="flex flex-col lg:flex-row gap-12 lg:items-end lg:justify-between mb-12"
+          >
+            <div class="space-y-4 max-w-2xl">
+              <span
+                class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                >Contact</span
+              >
+              <h2 class="font-headline-lg text-headline-lg text-primary">
+                Get in touch
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Contact details will be updated here. The layout is ready for
+                mobile number, email, and LinkedIn once you share the final
+                values.
+              </p>
+            </div>
+            <div
+              class="inline-flex items-center gap-2 rounded-lg border border-outline-variant bg-surface px-4 py-3 text-sm text-on-surface-variant"
+            >
+              <span class="material-symbols-outlined text-secondary"
+                >contact_mail</span
+              >
+              Contact details updated
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+            <a
+              class="academic-card bg-surface-container-lowest border border-outline-variant p-6 block h-full hover:bg-white"
+              href="tel:9500844547"
+            >
+              <div class="flex h-full flex-col gap-4">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-primary text-on-primary flex items-center justify-center shrink-0"
+                  >
+                    <span class="material-symbols-outlined">call</span>
+                  </div>
+                  <div class="min-w-0 space-y-1">
+                    <p
+                      class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                    >
+                      Mobile 1
+                    </p>
+                    <h3
+                      class="font-title-md text-title-md text-primary break-words"
+                    >
+                      9500844547
+                    </h3>
+                  </div>
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-auto"
+                >
+                  Tap to call directly.
+                </p>
+              </div>
+            </a>
+            <a
+              class="academic-card bg-surface-container-lowest border border-outline-variant p-6 block h-full hover:bg-white"
+              href="tel:8668192681"
+            >
+              <div class="flex h-full flex-col gap-4">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center shrink-0"
+                  >
+                    <span class="material-symbols-outlined">call</span>
+                  </div>
+                  <div class="min-w-0 space-y-1">
+                    <p
+                      class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                    >
+                      Mobile 2
+                    </p>
+                    <h3
+                      class="font-title-md text-title-md text-primary break-words"
+                    >
+                      8668192681
+                    </h3>
+                  </div>
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-auto"
+                >
+                  Alternate contact number.
+                </p>
+              </div>
+            </a>
+            <a
+              class="academic-card bg-surface-container-lowest border border-outline-variant p-6 block h-full hover:bg-white"
+              href="mailto:rajeshkumar.jsec@gmail.com"
+            >
+              <div class="flex h-full flex-col gap-4">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center shrink-0"
+                  >
+                    <span class="material-symbols-outlined">mail</span>
+                  </div>
+                  <div class="min-w-0 space-y-1">
+                    <p
+                      class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                    >
+                      Email
+                    </p>
+                    <h3
+                      class="font-title-md text-title-md text-primary break-all"
+                    >
+                      rajeshkumar.jsec@gmail.com
+                    </h3>
+                  </div>
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-auto"
+                >
+                  Send an email directly.
+                </p>
+              </div>
+            </a>
+            <a
+              class="academic-card bg-surface-container-lowest border border-outline-variant p-6 block h-full hover:bg-white"
+              href="https://www.linkedin.com/in/rajesh-kumar-k-84a72031a"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="flex h-full flex-col gap-4">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 rounded-2xl bg-accent text-on-primary flex items-center justify-center shrink-0"
+                  >
+                    <span class="material-symbols-outlined">person_search</span>
+                  </div>
+                  <div class="min-w-0 space-y-1">
+                    <p
+                      class="font-label-sm text-label-sm text-secondary uppercase tracking-widest"
+                    >
+                      LinkedIn
+                    </p>
+                    <h3
+                      class="font-title-md text-title-md text-primary break-words"
+                    >
+                      Rajesh Kumar K
+                    </h3>
+                  </div>
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-auto"
+                >
+                  Open the LinkedIn profile.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-surface-container-low dark:bg-tertiary-container border-t border-outline-variant dark:border-outline"
+    >
+      <div
+        class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto gap-8"
+      >
+        <div class="space-y-2 text-center md:text-left">
+          <div
+            class="font-title-md text-title-md text-primary dark:text-primary-fixed"
+          >
+            Rajesh Kumar K
+          </div>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container"
+          >
+            Ph.D. Researcher &amp; Educator
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8">
+          <a
+            class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-secondary-fixed transition-colors"
+            href="#"
+            >Publications</a
+          >
+          <a
+            class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-secondary-fixed transition-colors"
+            href="#courses"
+            >Courses</a
+          >
+          <a
+            class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-secondary-fixed transition-colors"
+            href="#"
+            >Contact</a
+          >
+          <a
+            class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-secondary-fixed transition-colors"
+            href="#"
+            >Institution</a
+          >
+        </div>
+        <div
+          class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-tertiary-container text-center md:text-right"
+        >
+          © 2024 Rajesh Kumar K. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- BottomNavBar (Mobile) -->
+    <nav
+      class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface dark:bg-surface-dim border-t border-outline-variant dark:border-outline shadow-lg dark:shadow-none"
+    >
+      <a
+        class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-xl px-3 py-1 scale-95 duration-150"
+        href="#"
+      >
+        <span class="material-symbols-outlined">home</span>
+        <span class="font-label-sm text-[10px]">Home</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-tertiary-container px-3 py-1 hover:bg-surface-container-high dark:hover:bg-tertiary-container transition-all"
+        href="#research"
+      >
+        <span class="material-symbols-outlined">science</span>
+        <span class="font-label-sm text-[10px]">Research</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-tertiary-container px-3 py-1 hover:bg-surface-container-high dark:hover:bg-tertiary-container transition-all"
+        href="#awards"
+      >
+        <span class="material-symbols-outlined">military_tech</span>
+        <span class="font-label-sm text-[10px]">Awards</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-tertiary-container px-3 py-1 hover:bg-surface-container-high dark:hover:bg-tertiary-container transition-all"
+        href="#education"
+      >
+        <span class="material-symbols-outlined">school</span>
+        <span class="font-label-sm text-[10px]">Education</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-tertiary-container px-3 py-1 hover:bg-surface-container-high dark:hover:bg-tertiary-container transition-all"
+        href="#courses"
+      >
+        <span class="material-symbols-outlined">school</span>
+        <span class="font-label-sm text-[10px]">Courses</span>
+      </a>
+      <a
+        class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-tertiary-container px-3 py-1 hover:bg-surface-container-high dark:hover:bg-tertiary-container transition-all"
+        href="#contact"
+      >
+        <span class="material-symbols-outlined">alternate_email</span>
+        <span class="font-label-sm text-[10px]">Contact</span>
+      </a>
+    </nav>
+    <script>
+      const profileToggle = document.getElementById("profileToggle");
+      const profileCard = document.getElementById("profileCard");
+
+      function setProfileCardOpen(isOpen) {
+        profileCard.classList.toggle("hidden", !isOpen);
+        profileToggle.setAttribute("aria-expanded", String(isOpen));
+      }
+
+      profileToggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+        setProfileCardOpen(profileCard.classList.contains("hidden"));
+      });
+
+      document.addEventListener("click", (event) => {
+        if (
+          !profileCard.contains(event.target) &&
+          !profileToggle.contains(event.target)
+        ) {
+          setProfileCardOpen(false);
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setProfileCardOpen(false);
+        }
+      });
+
+      // Smooth scroll implementation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Simple visibility observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-10");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".academic-card, section").forEach((el) => {
+        el.classList.add(
+          "transition-all",
+          "duration-700",
+          "opacity-0",
+          "translate-y-10",
+        );
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
